@@ -44,7 +44,7 @@
     overflow: auto;
 }
 .main-navication ul{
-    padding: 30px 0 0 10px;
+    padding: 0 0 0 10px;
 }
 .main-navication a, .main-navication a:visited {
     display: block;
