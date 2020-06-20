@@ -91,8 +91,10 @@ var gitblog = function(config) {
         },
         show: function() {
             var menu = this;
+            var menu_list = document.getElementById("menu");
+            menu_list.innerHTML = '<li><text style="font-zise:14px"><span style="color: white;transform:translateX(4px)">目录：</span></text></li>';
             for(var name in config.menu) {
-                document.getElementById("menu").innerHTML += '<li><a href=' + config.menu[name] + '><span>' + name + '</span></a></li>';
+                menu_list.innerHTML += '<li><a href=' + config.menu[name] + '><span>' + name + '</span></a></li>';
             }
             if (Object.keys(config.friends).length != 0) {
                 var menu_friend = document.getElementById("friends");
