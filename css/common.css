@@ -5,9 +5,9 @@
     bottom:0;
 }
 .navi-button {
-    font-size: .8rem;
+    font-size: 1.8rem;
     color: #7f8c8d;
-    border: 1px solid rgba(127,140,141,0.6);
+    border: 2px solid rgba(127,140,141,0.6);
     line-height: 35px;
     border-radius: 4px;
     display: block;
@@ -42,6 +42,9 @@
     opacity:0;
     transition: all 0.4s;
     overflow: auto;
+}
+.main-navication ul{
+    padding: 30px 0 0 10px;
 }
 .main-navication a, .main-navication a:visited {
     display: block;
