@@ -622,7 +622,7 @@ var gitblog = function(config) {
                 }
                 data[i].body = data[i].body.replace(/<.*?>/g, "");
                 data[i].created_at = self.utc2localTime(data[i].created_at);
-                document.getElementById('issue-list').innerHTML += '<li><p class="date">' + data[i].created_at + '</p><h4 class="title"><a href="content.html?id=' + data[i].number + '">' + data[i].title + '</a></h4><div class="excerpt"><p class="issue">' + data[i].body + '</p></div>' + '<ul class="meta"><li>' + data[i].user.login + '</li>' + labels_content + '</ul></li>';
+                document.getElementById('issue-list').innerHTML += '<li><p class="date">' + data[i].created_at + '</p><h2 class="title"><a href="content.html?id=' + data[i].number + '">' + data[i].title + '</a></h2><div class="excerpt"><p class="issue">' + data[i].body + '</p></div>' + '<ul class="meta"><li>' + data[i].user.login + '</li>' + labels_content + '</ul></li>';
             }
         },
         show: function(request_url) {
